@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sahar</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+<div class="container">
+    <section id="button-section">
+        <button class="start-button border-radius" onclick="start()">شروع</button>
+    </section>
+    <section id="question-section">
+        <div>
+            <p id="question" class="border-radius"></p>
+            <div class="timer">
+                <input type="range" id="range" min="0" max="10" value="10" disabled>
+                <label id="range-label" for="range">10</label>
+            </div>
+            <p id="answer1" class="answer border-radius" onclick="selectAnswer('answer1')"></p>
+            <p id="answer2" class="answer border-radius" onclick="selectAnswer('answer2')"></p>
+            <p id="answer3" class="answer border-radius" onclick="selectAnswer('answer3')"></p>
+            <p id="answer4" class="answer border-radius" onclick="selectAnswer('answer4')"></p>
+        </div>
+
+        <section id="answer-status">
+            <input id="status" type="radio" disabled >
+        </section>
+
+    </section>
+    <section id="final-section">
+        <p id="final-message"></p>
+        <button class="start-button border-radius" onclick="startAgain()">دوباره</button>
+    </section>
+</div>
+
+<script src="./assets/js/script.js"></script>
+</body>
+</html>
